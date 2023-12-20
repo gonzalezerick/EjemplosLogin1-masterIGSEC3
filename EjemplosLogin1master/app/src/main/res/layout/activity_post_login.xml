@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_4"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/drawer_layout"
+    tools:context=".PostLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/toolbar" />
+
+        <TextView
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_location"
+            android:text="Ciudad: Talca\n 25°C"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:drawableStart="@drawable/baseline_add_home_24"
+            android:hint="Dispositivos"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="24sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:layout_marginTop="300dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:id="@+id/nav_view"
+app:menu="@menu/nav_menu"
+app:headerLayout="@layout/nav_header"
+android:layout_gravity="start"
+app:itemIconTint="@color/black"
+app:itemTextColor="@color/black"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+

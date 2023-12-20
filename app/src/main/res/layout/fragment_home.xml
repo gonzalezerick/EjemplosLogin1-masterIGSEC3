@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_4"
+    android:id="@+id/fragmentContainerView"
+    tools:context=".PostLoginActivity"
+    tools:ignore="InvalidId">
+
+
+    <TextView
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:drawableStart="@drawable/ic_location"
+        android:text="Ciudad: Talca\n 25°C"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+    <EditText
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:drawableStart="@drawable/baseline_add_home_24"
+        android:hint="Dispositivos"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="182dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="270dp"
+            android:drawableStart="@drawable/baseline_king_bed_24"
+            android:hint="Habitacion"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="24sp" />
+
+
+        <Button
+            android:layout_width="226dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="270dp"
+            android:background="#00FFFFFF"
+            android:drawableLeft="@drawable/baseline_add_24"
+            android:hint="Añadir"
+            android:textColorHint="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+</FrameLayout>
